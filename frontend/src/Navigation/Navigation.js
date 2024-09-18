@@ -20,7 +20,7 @@ const Navigation = () => {
   useEffect(() => {
     const fetchUserData = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/api/profile", {
+        const response = await axios.get("https://backendnumber.onrender.com/api/profile", {
           headers: {
             'Authorization': `Bearer ${localStorage.getItem('token')}`
           },
@@ -35,7 +35,7 @@ const Navigation = () => {
 
     const fetchHighScore = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/api/getMaxScore", {
+        const response = await axios.get("https://backendnumber.onrender.com/api/getMaxScore", {
           headers: {
             'Authorization': `Bearer ${localStorage.getItem('token')}`
           },
