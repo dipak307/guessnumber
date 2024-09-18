@@ -9,7 +9,7 @@ const Leaderboard = () => {
   useEffect(() => {
     const fetchLeaderboardData = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/leaderboard', {
+        const response = await axios.get('https://backendnumber.onrender.com/api/leaderboard', {
           headers: {
             'Authorization': `Bearer ${localStorage.getItem('token')}`, // Optional: Include auth if needed
           },
