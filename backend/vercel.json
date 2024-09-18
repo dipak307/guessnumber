@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "*.js", 
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",  // Route to your backend
+      "dest": "/"  // Map the route to the appropriate file
+    }
+  ]
+  
+}
