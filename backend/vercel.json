@@ -8,8 +8,8 @@
   ],
   "routes": [
     {
-      "src": "/(.*)",  // Route to your backend
-      "dest": "/"  // Map the route to the appropriate file
+      "src": "/(.*)",  
+      "dest": "/"  
     }
   ]
   
