@@ -82,7 +82,7 @@ const Register = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('http://localhost:5000/api/register', formData, {
+      const res = await axios.post('https://backendnumber.onrender.com/api/register', formData, {
         headers: {
           'Content-Type': 'application/json'
         }
