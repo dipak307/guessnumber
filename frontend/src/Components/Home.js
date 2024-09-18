@@ -18,7 +18,7 @@ const Home = () => {
   // Fetch high score from the server
   const fetchHighScore = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/api/getMaxScore", {
+      const response = await axios.get("https://backendnumber.onrender.com/api/getMaxScore", {
         headers: {
           Authorization: `Bearer ${localStorage.getItem('token')}`
         },
