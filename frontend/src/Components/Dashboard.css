@@ -1,0 +1,44 @@
+.dashboard {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f0f4f8;
+}
+
+/* Navigation styles */
+.navigation {
+  flex: 0 0 350px; /* Fixed width for the sidebar */
+  background-color: #f8b195; /* Matches the gradient from your Navigation component */
+  height: 100vh; /* Make sure it takes full height */
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for separation */
+  position: fixed; /* Keep the navigation fixed on the left side */
+  top: 0;
+  left: 0;
+}
+
+/* Content (Outlet) styles */
+.dashboard > .outlet {
+  flex: 1; /* Let the outlet take the remaining space */
+  margin-left: 350px; /* Account for the sidebar's width */
+  padding: 2rem; /* Add padding around the content */
+  background-color: #ffffff;
+  overflow-y: auto; /* Add scrolling if content is long */
+}
+
+@media (max-width: 768px) {
+  /* Make the layout responsive on smaller screens */
+  .dashboard {
+    flex-direction: column;
+  }
+  
+  .navigation {
+    flex: 0 0 auto;
+    width: 100%;
+    height: auto;
+    position: relative; /* Allow navigation to be placed on top on small screens */
+  }
+
+  .dashboard > .outlet {
+    margin-left: 0;
+    margin-top: 1rem; /* Add some space below the navigation */
+  }
+}

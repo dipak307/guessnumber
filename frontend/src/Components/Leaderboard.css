@@ -1,0 +1,35 @@
+.leaderboard-container {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .leaderboard {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .leaderboard-entry {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px 0;
+    border: 1px solid #3f2fcd;
+    border-radius: 50px;
+    background-color: aqua;
+  }
+  
+  .username {
+    font-weight: bold;
+  }
+  
+  .maxscore {
+    color: green;
+  }
+  

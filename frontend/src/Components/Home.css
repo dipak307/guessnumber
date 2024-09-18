@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+.App {
+  text-align: center;
+}
+.homepage{
+  display: flex;
+  flex-direction: column;
+  margin-left: 2%;
+  justify-content: center;
+  align-items: center;
+}
+*{
+  font-family: "Poppins",sans-serif;
+  font-size: 1.3rem;
+  /* background-color: rgb(181, 136, 136); */
+}
+button{
+  color: rgb(16, 4, 10);
+  border-radius: 25px;
+  background-color: rgb(94, 128, 0);
+  cursor: pointer;
+}
+.upper{
+  display: flex;
+  flex-direction: column;
+  margin-left: 30%;
+  margin-bottom: 10px;
+  border: 1px solid black;
+  width: 600px;
+  height: 250px;
+}
+.score{
+  margin-left: 150px;
+}
+
+#rules{
+  margin-top: 60px;
+}
+h1{
+  margin-left: 180px;
+}
+ul{
+  margin-top: 0%;
+}
+ul li{
+  font-size: 22px;
+}
+
+#hint{
+  font-size: 14px;
+}
+.game{
+  padding: 5px;
+  margin: 5px;
+  margin-left: 200px;
+}
