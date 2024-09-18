@@ -106,7 +106,7 @@ const Home = () => {
   // Function to save max score to the database
   const saveMaxScore = async (score) => {
     try {
-      const response = await axios.post('http://localhost:5000/api/updateMaxScore', 
+      const response = await axios.post('https://backendnumber.onrender.com/api/updateMaxScore', 
         { maxscore: score }, // Data to be sent
         { withCredentials: true } // Configuration options
       );
